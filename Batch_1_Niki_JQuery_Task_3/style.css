@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    margin: 0;
+}
+
+body.swal2-shown>[aria-hidden="true"] {
+    filter: blur(5px);
+}
+
+.swal2-styled.swal2-confirm,
+.swal2-styled.swal2-cancel {
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B) !important;
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75) !important;
+    height: 52px !important;
+    width: 150px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    border: none !important;
+    background-size: 300% 100% !important;
+    border-radius: 50px !important;
+    moz-transition: all .5s ease-in-out !important;
+    -o-transition: all .5s ease-in-out !important;
+    -webkit-transition: all .5s ease-in-out !important;
+    transition: all .5s ease-in-out !important;
+}
+
+.swal2-styled.swal2-confirm:hover,
+.swal2-styled.swal2-cancel:hover {
+    background-position: 100% 0 !important;
+    moz-transition: all .5s ease-in-out !important;
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B) !important;
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75) !important;
+    -o-transition: all .5s ease-in-out !important;
+    -webkit-transition: all .5s ease-in-out !important;
+    transition: all .5s ease-in-out !important;
+}
+
+.frosted-glass {
+    background: inherit !important;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: 0 .5em 1em rgba(0, 0, 0, .3);
+    color: antiquewhite !important;
+}
+
+.frosted-glass::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    box-shadow: inset 0 0 3000px rgba(151, 128, 128, 0.5);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+.addBtn {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 3px 40px;
+    background: linear-gradient(to bottom right, rgb(29, 33, 76), rgb(55, 64, 163));
+    border: 0;
+    color: white;
+}
+
+.addBtn:hover {
+    background: white;
+    color: rgb(29, 33, 76);
+    transition: all 0.7s;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+table {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    counter-reset: section;
+}
+
+.table_danger {
+    background-color: #c825433f;
+}
+
+.counter::before {
+    counter-increment: section;
+    content: counter(section);
+    text-align: center;
+}
+
+th {
+    font-size: 25px;
+    font-family: 'Poppins';
+    color: rgb(29, 33, 76);
+    text-align: center;
+}
+
+.saveBtn {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 3px 40px;
+    background: linear-gradient(to bottom right, rgb(29, 33, 76), rgb(55, 64, 163));
+    border: 0;
+    color: white;
+}
+
+.saveBtn:hover {
+    background: white;
+    color: rgb(29, 33, 76);
+    transition: all 0.7s;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-control:focus {
+    border-color: gray;
+    box-shadow: none;
+}
+
+.title {
+    color: rgb(29, 33, 76);
+    font-size: 40px;
+    font-family: 'Poppins';
+    text-align: start;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+.accept:hover {
+    background: linear-gradient(to bottom right, #1b2a20, #47a152);
+    border: 1px solid rgb(17, 52, 42);
+    transition: all 0.7s;
+    color: white;
+    box-shadow: rgba(43, 131, 106, 0.35) 0px 5px 15px;
+}
+
+.accept {
+    background: white;
+    color: rgb(17, 52, 42);
+    font-size: 20px;
+    border: 1px solid rgb(17, 52, 42);
+    box-shadow: rgba(43, 131, 106, 0.35) 0px 5px 15px;
+    padding: 3px 40px;
+
+}
+
+.acceptBtn {
+    background: linear-gradient(to bottom right, #1b2a20, #47a152);
+    color: white;
+    transition: all 0.7s;
+    border: 1px solid rgb(17, 52, 42);
+    font-size: 20px;
+    padding: 3px 40px;
+}
+
+.rejectBtn {
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A) !important;
+    color: white !important;
+    transition: all 0.7s !important;
+    border: 1px solid #c82543 !important;
+    font-size: 20px !important;
+    padding: 3px 40px !important;
+}
+
+.reject:hover,
+.remove:hover {
+    transition: all 0.7s;
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 1px solid #c82543;
+    color: white;
+    box-shadow: rgba(148, 31, 31, 0.35) 0px 5px 15px;
+}
+
+.reject,
+.remove {
+    background: white;
+    color: #c82543;
+    font-size: 20px;
+    padding: 3px 40px;
+    font-weight: 200;
+    border: 1px solid #c82543;
+    box-shadow: rgba(148, 31, 31, 0.35) 0px 5px 15px;
+}
+
+td {
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: rgb(36, 42, 104);
+    text-align: center;
+}
+
+.searchInput {
+    font-family: 'Poppins';
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none !important;
+    background: rgb(255, 255, 255);
+    color: black;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    padding: 0 80px 0 20px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+    transition: all 1s;
+    opacity: 0;
+    z-index: 5;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+}
+
+
+.searchInput:hover {
+    cursor: pointer;
+}
+
+.searchInput:focus {
+    width: 300px;
+    opacity: 1;
+    cursor: text;
+}
+
+.searchInput:focus~.search {
+    right: -250px;
+    background: #151515;
+    z-index: 6;
+
+
+}
+
+#dataForm .search {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom right, rgb(29, 33, 76), rgb(55, 64, 163));
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#dataForm .search:hover {
+    cursor: pointer;
+}
+
+.searchInput::placeholder {
+    color: rgb(29, 33, 76);
+    opacity: 0.7;
+    font-weight: bolder;
+}
+
+.searchInput::before {
+    top: 0;
+    left: 0;
+    width: 25px;
+}
+
+.searchInput::after {
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    border: none;
+    background: white;
+    border-radius: 0%;
+}
+#per{
+    display: none;
+}
+
+#dataContainer {
+    display: none;
+}
+.search .bi-search {
+    font-size: 24px;
+    position: relative;
+    top: 7px;
+    left: 13px;
+    color: white;
+}
+
+.invalid input {
+    border: 1px solid #c82543;
+    box-shadow: rgba(148, 31, 31, 0.35) 0px 5px 15px;
+}
+
+.invalid p {
+    display: block;
+    color: #c82543;
+}
+
+.valid p {
+    display: none;
+}
+
+.valid input {
+    border: 2px solid rgb(95, 165, 145);
+    box-shadow: rgba(43, 131, 106, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width:300px) {
+    .searchInput:focus {
+        width: 200px;
+        opacity: 1;
+        cursor: text;
+        color: #151515;
+    }
+
+    td {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .showtbl {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 700px) {
+
+    #dataTableMain th {
+        display: none;
+    }
+
+    #dataTableMain td {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    #showData th,
+    #showPer th {
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    #showData td,
+    #showPer td {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .title {
+        color: rgb(29, 33, 76);
+        font-size: 20px;
+        font-family: 'Poppins';
+        text-align: start;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+        width: 100%;
+    }
+
+    .searchInput:focus {
+        width: 150px;
+        opacity: 1;
+        cursor: text;
+        font-size: 10px;
+        color: #151515;
+    }
+
+    .searchInput {
+        height: 30px;
+        width: 30px;
+    }
+
+    #dataForm .search {
+        height: 30px;
+        width: 30px;
+    }
+
+    .search .bi-search {
+        top: 3px;
+        left: 8px;
+        font-size: 15px;
+    }
+}

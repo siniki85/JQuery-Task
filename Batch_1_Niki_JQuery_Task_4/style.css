@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    margin: 0;
+}
+
+.container-fluid
+{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.addBtn {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 3px 40px;
+    background: linear-gradient(to bottom right, rgb(29, 33, 76), rgb(55, 64, 163));
+    border: 0;
+    color: white;
+}
+
+.addBtn:hover {
+    background: white;
+    color: rgb(29, 33, 76);
+    transition: all 0.7s;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title {
+    background: linear-gradient(to right, #6b84c4, #64a4d2, #3d7de4, #30badc);
+    font-size: 40px;
+    font-family: 'Poppins';
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+table {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+thead {
+    position: sticky;
+    top: -3px;
+    background-image: linear-gradient(95.2deg, rgba(173, 252, 234, 1) 26.8%, rgba(192, 229, 246, 1) 64%) !important;
+}
+
+
+th {
+    font-size: 20px;
+    font-family: 'Poppins';
+    color: rgb(29, 33, 76);
+}
+
+td {
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: rgb(44, 47, 78);
+}
+
+html {
+    --scrollbarBG: rgba(192, 229, 246, 1);
+    --thumbBG: rgb(73, 124, 172);
+}
+
+.mainTab {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+
+    height: 700px;
+    overflow-x: auto;
+}
+
+*::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 2px solid var(--scrollbarBG);
+}
+
+@media (max-width: 700px) {
+    .container-fluid{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #mainTab {
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+    button {
+        width: 90%;
+    }
+} 

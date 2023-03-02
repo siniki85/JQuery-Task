@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    margin: 0;
+}
+
+table {
+    box-shadow: rgba(169, 96, 123, 0.24) 0px 3px 8px;
+}
+
+td {
+    font-size: 25px;
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: rgb(36, 42, 104);
+    text-align: center;
+    border: 1px solid rgb(176, 169, 169);
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: rgba(236, 116, 149, 0.75);
+    outline: 0;
+    box-shadow: 0 4px 15px 0 rgba(211, 108, 136, 0.43);
+}
+
+.swal2-styled.swal2-confirm {
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B) !important;
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75) !important;
+    /* height: 50px !important; */
+    width: 150px !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    /* text-align: center; */
+    margin: 0 !important;
+    border: none !important;
+    background-size: 300% 100% !important;
+    border-radius: 50px !important;
+    moz-transition: all .5s ease-in-out !important;
+    -o-transition: all .5s ease-in-out !important;
+    -webkit-transition: all .5s ease-in-out !important;
+    transition: all .5s ease-in-out !important;
+}
+
+.swal2-styled.swal2-confirm:hover {
+    background-position: 100% 0 !important;
+    moz-transition: all .5s ease-in-out !important;
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B) !important;
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75) !important;
+    -o-transition: all .5s ease-in-out !important;
+    -webkit-transition: all .5s ease-in-out !important;
+    transition: all .5s ease-in-out !important;
+}
+
+#lastP {
+    font-size: 25px;
+    font-family: 'Poppins';
+    color: rgb(29, 33, 76);
+    text-align: center;
+}
+
+.title {
+    background: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B);
+    font-size: 40px;
+    font-family: 'Poppins';
+    text-align: start;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 700px) {
+
+    #dataTableMain th {
+        display: none;
+    }
+
+    #dataTableMain td {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    #showData th,
+    #showPer th {
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    #showData td,
+    #showPer td {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .title {
+        color: rgb(29, 33, 76);
+        font-size: 20px;
+        font-family: 'Poppins';
+        text-align: start;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+        width: 100%;
+    }
+}

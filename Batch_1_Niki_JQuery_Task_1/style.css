@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    margin: 0;
+}
+
+.addBtn {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 3px 40px;
+    background: linear-gradient(to bottom right, rgb(29, 33, 76), rgb(55, 64, 163));
+    border: 0;
+    color: white;
+}
+
+.addBtn:hover {
+    background: white;
+    color: rgb(29, 33, 76);
+    transition: all 0.7s;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+table {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    counter-reset: section;
+}
+
+.counter::before {
+    counter-increment: section;
+    content: counter(section);
+    text-align: center;
+}
+
+th {
+    font-size: 25px;
+    font-family: 'Poppins';
+    color: rgb(29, 33, 76);
+    text-align: center;
+}
+
+
+.form-control:focus {
+    border-color: gray;
+    box-shadow: none;
+}
+
+.title {
+    color: rgb(29, 33, 76);
+    font-size: 40px;
+    font-family: 'Poppins';
+    text-align: start;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+.accept {
+    font-size: 20px;
+    background: linear-gradient(to bottom right, #1b2a20, #47a152);
+    border: 0;
+    padding: 3px 40px;
+    color: white;
+}
+
+.accept:hover {
+    background: white;
+    color: rgb(17, 52, 42);
+    transition: all 0.7s;
+    border: 0;
+    box-shadow: rgba(43, 131, 106, 0.35) 0px 5px 15px;
+}
+
+.reject,
+.remove {
+    font-size: 20px;
+    font-weight: 200;
+    padding: 3px 40px;
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    color: white;
+}
+
+.reject:hover,
+.remove:hover {
+    background: white;
+    color: #c82543;
+    transition: all 0.7s;
+    border: 0;
+    box-shadow: rgba(148, 31, 31, 0.35) 0px 5px 15px;
+}
+
+.timer{
+    width: 200px;
+    height: 60px;
+    color: #0b0b0b;
+    text-align: center;
+    font: 50px/60px 'DIGITAL', Helvetica;
+}
+
+td {
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: rgb(36, 42, 104);
+    text-align: center;
+}
+
+.invalid input {
+    border: 1px solid #c82543;
+    box-shadow: rgba(148, 31, 31, 0.35) 0px 5px 15px;
+}
+
+.invalid p {
+    display: block;
+    color: #c82543;
+}
+
+.valid p {
+    display: none;
+}
+
+.valid input {
+    border: 2px solid rgb(95, 165, 145);
+    box-shadow: rgba(43, 131, 106, 0.35) 0px 5px 15px;
+}
+
+@media (max-width: 700px) {
+
+    #dataTableMain th {
+        display: none;
+    }
+
+    #dataTableMain td {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    #showData th,
+    #showPer th {
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    #showData td,
+    #showPer td {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .title {
+        color: rgb(29, 33, 76);
+        font-size: 20px;
+        font-family: 'Poppins';
+        text-align: start;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+        width: 100%;
+    }
+}
